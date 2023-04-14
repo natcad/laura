@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" Laura Cadabon es una bandoneonista y pianista nacida en Buenos Aires, Argentina. 
+      Aquí puedes contactarla."
+    />
+    <meta
+      name="keywords"
+      content=" contactar a Laura Cadabon, contactar bandoneonista"
+    />
+    <title>Contacto | Laura Cadabon</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/172c84a218.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--------------- bootstraps ----------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!---------------- css styles ------------------>
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <!------------ montserrat font ---------------->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!------------------ iconos ------------------->
+    <script
+      src="https://kit.fontawesome.com/172c84a218.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--------- bootstrap nav  ---------->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: #0000"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <!--------- logo ---------->
+          <img src="../img/logo.png" width="40" class="navbar-logo" />
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <!--------- hambuger menu ---------->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!--------- mobile navbar ---------->
+          <div class="offcanvas-header bg-black">
+            <img src="../img/logo.png" width="40" class="navbar-logo" />
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!--------- links ---------->
+          <div class="offcanvas-body bg-black">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/eventos.html">EVENTOS</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/galeria.html"
+                  >GALERIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/clases.html"
+                  >CLASES & WORKSHOPS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/contacto.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fab fa-facebook-f nav-icon"> </i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fab fa-instagram nav-icon"> </i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!---------- pagina de contacto ---------->
+    <div class="container-fluid bg-black p-0 contactos">
+      <div class="row">
+        <div class="col contactos__contenedor">
+          <h2 class="contactos__h2">CONTACTO</h2>
+          <div class="contactos__texto">
+            <span class="contactos__p">
+              Por contrataciones, mayor información o lo que desee puede mandar
+              un mensaje completando los datos y responderemos a la brevedad.
+            </span>
+          </div>
+
+          <!-- titulo -->
+          <h2 class="contactos__h2">REDES SOCIALES</h2>
+          <!-- iconos de redes sociales -->
+          <div class="contactos__contenedor">
+            <ul class="contactos__ul">
+              <!-- lista de iconos con links a redes sociales -->
+              <li class="contactos__li">
+                <!-- un item de la lista de iconos con links a las redes sociales -->
+                <a href="tel:+123456789" class="contactos__a">
+                  <!-- icono telefono  -->
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </li>
+              <li class="contactos__li">
+                <!-- un item de la lista de iconos con links a las redes sociales -->
+                <a href="mailto:uncorreo@correo.com" class="contactos__a">
+                  <!-- icono mail -->
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </li>
+              <li class="contactos__li">
+                <!-- un item de la lista de iconos con links a las redes sociales -->
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  class="contactos__a"
+                >
+                  <!-- icono facebook -->
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="contactos__li">
+                <!-- un item de la lista de iconos con links a las redes sociales -->
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="contactos__a"
+                >
+                  <!-- icono instagram -->
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="contactos__li">
+                <!-- un item de la lista de iconos con links a las redes sociales -->
+                <a
+                  href="https://open.spotify.com/artist/7hdyL6gI0cKuUQxxIkfSNV"
+                  target="_blank"
+                  class="contactos__a"
+                >
+                  <!-- icono spotify -->
+                  <i class="fab fa-spotify"></i>
+                </a>
+              </li>
+
+              <li class="contactos__li">
+                <a
+                  href="https://www.youtube.com/@lauracadabon8107"
+                  target="_blank"
+                  class="contactos__a"
+                >
+                  <!-- icono youtbe -->
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="contactos__li">
+                <a
+                  href="https://music.apple.com/ar/artist/laura-cadabon/1493203554"
+                  target="_blank"
+                  class="contactos__a"
+                >
+                  <!-- icono itunes -->
+                  <i class="fab fa-itunes"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- -------------- formulario --------------- -->
+        <div class="col formulario">
+          <form action="submit" class="formulario">
+            <div class="formulario__nombre">
+              <!--input para el nombre -->
+              <label for="name" class="formulario__label"> Nombre </label>
+              <br />
+              <input name="name" type="text" class="formulario__input" />
+            </div>
+            <div class="formulario__mail">
+              <!--input para el mail-->
+              <label for="email" class="formulario__label"> Email </label>
+              <br />
+              <input name="email" type="text" class="formulario__input" />
+            </div>
+            <div class="formulario__mensaje">
+              <!--textarea-->
+              <label for="mensaje" class="formulario__label">
+                Ingresa un mensaje
+              </label>
+              <br />
+              <textarea
+                name="comment"
+                id=""
+                cols="30"
+                rows="10"
+                class="formulario__textarea"
+              ></textarea>
+            </div>
+            <div class="formulario__contenedorBoton">
+              <!-- button -->
+              <button class="formulario__button">ENVIAR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <!--redes sociales-->
+
+      <div class="footer__disclaimer disclaimer">
+        <ul class="disclaimer__ul">
+          <li class="disclaimer__li">
+            <p class="disclaimer__p">© 2023</p>
+          </li>
+          <li class="disclaimer__li">
+            <a href="" class="disclaimer__a">Privacy </a>
+          </li>
+          <li class="disclaimer__li">
+            <a href="" class="disclaimer__a"> Terms of Use </a>
+          </li>
+          <li class="disclaimer__li">
+            <a href="" class="disclaimer__a">Cookie Policy </a>
+          </li>
+          <li class="disclaimer__li">
+            <a href="" class="disclaimer__a">Cookie Settings </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

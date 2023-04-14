@@ -1,0 +1,119 @@
+
+
+.contenedorPagina {
+  @include size(fit-content, 100%);
+}
+.banner {
+  margin-top: 65px;
+  width: 80vw;
+  @include flexible(flex, column, nowrap, center, center);
+  text-align: center;
+  padding-bottom: 30px;
+  &__contenedor {
+    width: 100%;
+    position: relative;
+  }
+  &__tit {
+    position: absolute;
+    @include size(100%, 100%);
+    @include flexible(flex, column, nowrap, center, center);
+  }
+  &__h1 {
+    color: $primary;
+    font-size: 15vw;
+  
+  }
+  &__img {
+    @include size(100%, 100%);
+    max-height: 350px;
+    min-height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.listado {
+  @include flexible(flex, column, nowrap, center, center);
+  color: $alternative;
+  &__item {
+    width: 90vw;
+    display: grid;
+    grid-template-areas:
+      "date event  location info"
+      "date  band  location info";
+    grid-template-columns: 25% 35% 20% 20%;
+    @include grid-gap(10px, 0px);
+    @include mobile {
+      text-align: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 0.1fr);
+      grid-template-areas:
+        "date"
+        "event"
+        "location"
+        "band"
+        "info";
+      padding-bottom: 20px;
+    }
+    &--date {
+      grid-area: date;
+      font-weight: $weight-semibold;
+      @include mobile {
+        font-size: $text-base !important;
+      }
+
+    }
+    &--event {
+      grid-area: event;
+      font-weight: $weight-bold;
+
+      @include mobile {
+        font-size: $text-medium !important;
+      }
+    }
+    &--location {
+      grid-area: location;
+      font-weight: $weight-bold;
+    }
+    &--band {
+      padding-top: 0px;
+      grid-area: band;
+      font-size: $text-small;
+    }
+    &--a {
+      font-weight: $weight-bold;
+      color: $primary !important;
+      &:hover {
+        color: $secondary !important;
+      }
+    }
+    &--info {
+      grid-area: info;
+      text-align: center;
+      @include mobile {
+        padding-top: 15px;
+      }
+    }
+  }
+}
+.suscripcion {
+  width: 100%;
+  color: white;
+  @include flexible(flex, column, nowrap, center, center);
+  padding: 20px 0px 40px 0px;
+  &__h4 {
+    padding: 15px 0px;
+    text-align: center;
+  }
+  &__input {
+    border-bottom: 3px solid $primary;
+    box-sizing: border-box;
+    width: 300px;
+    border-radius: 5px;
+  }
+  &__button {
+    @include button(none, none, $primary, $secondary, 25px, 20px);
+    text-align: center;
+    
+  }
+}

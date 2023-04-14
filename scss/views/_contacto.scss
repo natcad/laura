@@ -1,0 +1,47 @@
+
+
+.contactos {
+  @include size(fit-content, 100%);
+  margin-top: 60px;
+  color: white;
+  &__contenedor {
+    @include flexible(flex, column, nowrap, space-evenly, center);
+    text-align: center;
+  }
+ 
+  &__li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  &__a{
+    font-size: 4vh;
+    &:hover{
+        color: $primary!important;
+    }
+  }
+}
+
+.formulario{
+    @include flexible(flex, column, nowrap, center, center);
+    padding: 30px 0px;
+    @include mobile{
+        padding-top:0px
+    }
+    &__input {
+        border-radius: 20px;
+        width: 350px;
+        height: 40px;
+        box-sizing: border-box;
+      }
+      &__textarea {
+        border-radius: 20px;
+        font-size: 20px;
+        width: 350px;
+        box-sizing: border-box;
+     }
+     &__button{
+        @include button($primary,$secondary,white,white,2vh,50px);
+        @include size(50px,150px);
+     }
+     
+}

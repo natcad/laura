@@ -1,0 +1,52 @@
+@mixin flexible($disp, $direction, $wrap, $justify, $align) {
+  display: $disp;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+@mixin grid-gap($column, $row) {
+  row-gap: $row;
+  column-gap: $column;
+}
+@mixin button(
+  $back-color,
+  $secondary-back,
+  $text-color,
+  $secondary-text-color,
+  $font-size,
+  $border-radius
+) {
+  box-shadow: none;
+  border: none;
+  color: $text-color;
+  background: $back-color;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  &:hover {
+    background: $secondary-back;
+    color: $secondary-text-color;
+  }
+}
+@mixin grid-column($column, $gap) {
+  display: grid;
+  grid-template-columns: repeat($column, 1fr);
+  gap: $gap;
+}
+@mixin grid-row($row, $gap) {
+  display: grid;
+  grid-template-rows: repeat($row, 1fr);
+  gap: $gap;
+}
+
+@mixin grid($column, $col-gap, $row, $row-gap) {
+  display: grid;
+  grid-template-rows: $row;
+  row-gap: $row-gap;
+  grid-template-columns: $column;
+  column-gap: $col-gap;
+}
+

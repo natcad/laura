@@ -1,0 +1,111 @@
+.containerPage{
+  @include size(fit-content, 100%);
+  overflow: hidden;
+}
+.primeraSeccion {
+  position: relative;
+  @include size(fit-content, 100%);
+  min-height: 100vh;
+  color: white;
+  &__video {
+    position: absolute;
+    z-index: -1;
+    @include size(100vh, 100%);
+    object-fit: cover;
+  }
+  &__overlay {
+    position: absolute;
+    z-index: 2;
+    margin-top: 50px;
+    @include size(90vh, 100%);
+    @include flexible(flex, column, nowrap, space-between, center);
+    text-align: center;
+  }
+  &__icon {
+    font-size: $text-large;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  &__h1 {
+    @include tablet {
+      padding-top: 10px;
+      font-size: $text-large;
+    }
+  }
+}
+
+.segundaSeccion {
+  &__container {
+    color: white;
+    @include size(fit-content, 100%);
+    min-height: 100vh;
+    @include flexible(flex, row, wrap, "", center);
+  }
+  &__texto {
+    padding: 0px 10px;
+    @include tablet {
+      visibility: hidden;
+      @include size(0, 0);
+    }
+    &--mobile {
+      visibility: hidden;
+      @include size(0, 0);
+      @include tablet {
+        visibility: visible;
+        text-align: center;
+        @include size(fit-content, fit-content);
+        padding: 10px 5px;
+        margin: 10px;
+      }
+    }
+  }
+}
+.terceraSeccion {
+  min-height: 80vh;
+  @include size(fit-content, 100%);
+  padding-top: 50px;
+  text-align: center;
+  &__proyecto {
+    @include flexible(flex, column, nowrap, space-between, center);
+    padding: 35px 10px;
+  }
+  &__h2 {
+    color: $primary;
+  }
+  &__figure {
+    position: relative;
+    @include size(26rem, 26rem);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    @include tablet{
+        @include size(400px,70vw);
+    }
+
+  }
+  &__img {
+    @include size(100%, 100%);
+    object-fit: cover;
+    transition: all 500ms ease-out;
+  }
+  &__capa {
+    position: absolute;
+    top: 0;
+    @include size(100%, 100%);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    text-align: center;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__texto{
+    @include size(100%, fit-content);
+    object-fit:cover;
+    padding: 0 10px;
+    @include flexible(flex,column, nowrap,center,center);
+    color: white;
+  }
+}

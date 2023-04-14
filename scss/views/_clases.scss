@@ -1,0 +1,65 @@
+
+
+.clases {
+  @include size(fit-content, 100%);
+  &__h2,
+  &__h3,
+  &__p {
+    color: white !important;
+    padding: 0 0 1vw 2vw;
+  }
+  &__flex {
+    margin: 15vh 0 0 0;
+  }
+  &__grilla {
+    @include size(fit-content, 100vw);
+    @include grid(repeat(3, 1fr), 0px, auto, 0px);
+     @include mobile {
+        grid-template-columns: repeat(5, 1fr);
+     }
+  }
+  &__txt {
+    padding: 10px 30px;
+  }
+  &__contenedorBton {
+    @include flexible(flex, row, nowrap, center, center);
+    padding-bottom:3vh ;
+  }
+  &__button {
+    @include button($primary, $secondary, white, white, 2vh, 50px);
+    @include size(50px, 250px);
+  }
+  &__imagen {
+    @include size(100%, 100%);
+    object-fit: cover;
+    @media screen and (max-width: 400px) {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+    &:hover{
+        transform: scale(1.03);
+        z-index: 2;
+      }
+  }
+  &__item {
+    position: relative;
+ 
+    @include mobile {
+      &:nth-child(1) {
+        grid-column-start: span 2;
+       
+      }
+      &:nth-child(2) {
+        grid-column-start: span 3;
+      }
+      &:nth-child(3) {
+        grid-column-start: span 5;
+      }
+    }
+  }
+  &__img {
+    @include size(100%, 100%);
+    object-fit: cover;
+  }
+}

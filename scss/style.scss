@@ -1,0 +1,16 @@
+// globals
+
+@import "./globals/variables";
+@import "./globals/media-queries";
+@import "./globals/reset";
+@import "./globals/mixins";
+
+
+//views
+
+@import "./views/customBootstrap";
+@import "./views/home";
+@import "./views/contacto";
+@import "./views/eventos";
+@import "./views/galeria";
+@import "./views/clases";

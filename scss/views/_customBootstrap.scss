@@ -1,0 +1,71 @@
+
+
+a {
+    color: white !important;
+    font-family: $font-principal;
+  }
+.navbar {
+  height: 60px;
+  width: 100%;
+  padding: 0 20px 0 50px;
+  background-color: black !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.nav {
+  padding: 5 20px;
+  box-sizing: border-box;
+  &-item a {
+    font-size: $text-base;
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+.footer {
+  background: $primary;
+  @include flexible(flex, column, wrap, center, center);
+  text-align: center;
+  &__li {
+    padding: 15px 25px 0 25px;
+    display: inline-block;
+    font-size: $text-medium;
+    @include tablet{
+        padding: 10px;
+    }
+    @include mobile{
+        font-size: 25px;
+        padding: 10px 0;
+    }
+  }
+
+  &__a:hover {
+    color: black!important;
+  }
+}
+
+.disclaimer {
+    font-size: $text-small;
+    color: white;
+    &__li {
+      display: inline-block;
+      padding: 10px 5px 0px 5px;
+    }
+    &__a:hover {
+      color: black!important;
+    }
+    @include tablet{
+        padding: 0px;
+    }
+    @include mobile{
+        font-size: $text-small;
+    }
+  }
+
+.container-fluid{
+    overflow: hidden;
+}

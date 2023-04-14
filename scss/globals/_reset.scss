@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: $font-principal;
+    font-weight: $weight-base;
+    font-size: $text-base;
+    @include tablet{
+        font-size: $text-small;
+    }
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: $font-principal;
+}
+
+h1{
+    font-size: $text-xl;
+    font-weight: $weight-bold;
+}
+h2{
+    font-size: $text-large;
+    font-weight: $weight-bold;
+}
+
+h3 {
+    font-size: $text-medium;
+    font-weight: $weight-semibold;
+
+}

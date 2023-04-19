@@ -227,8 +227,8 @@
         <!-- -------------- formulario --------------- -->
         <div class="col formulario">
           <form
-            action="/php/form.php"
-            method='POST'
+            action='../pages/form.php'
+            method='post'
             class="formulario row g-3 needs-validation"
             novalidate
           >
@@ -259,7 +259,8 @@
                 type="email"
                 class="form-control formulario__input"
                 id="exampleFormControlInput1"
-                placeholder="name@example.com"
+          
+                required
               />
             </div>
             <div class="formulario__mensaje">
@@ -271,13 +272,14 @@
                 class="form-control formulario__textarea"
                 id="textarea"
                 name="textarea"
-                rows="3"
+                rows="3" 
+                required
               ></textarea>
 
             </div>
             <div class="formulario__contenedorBoton">
               <!-- button -->
-              <button class="formulario__button">ENVIAR</button>
+              <input class="formulario__button" type="submit" value="Enviar">
             </div>
           </form>
         </div>

@@ -226,62 +226,8 @@
 
         <!-- -------------- formulario --------------- -->
         <div class="col formulario">
-          <form
-            action="../php/form.php"
-            method='POST'
-            class="formulario row g-3 needs-validation"
-            novalidate
-          >
-            <div class="col formulario__nombre">
-              <!--input para el nombre -->
-              <label
-                for="validationTooltip01"
-                class="form-label formulario__label"
-                >First name</label
-              >
-              <input
-                type="nombre"
-                class="form-control formulario__input"
-                id="validationTooltip01"
-                required
-              />
-              <div class="valid-tooltip">Looks good!</div>
-            </div>
-            <div class="formulario__mail">
-              <!--input para el mail-->
-              <label
-                for="exampleFormControlInput1"
-                class="form-label formulario__label"
-              >
-                Email address
-              </label>
-              <input
-                type="email"
-                class="form-control formulario__input"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="formulario__mensaje">
-              <!--textarea-->
-              <label for="exampleFormControlTextarea1" class="form-label formulario__label"
-                >Write a message</label
-              >
-              <textarea
-                class="form-control formulario__textarea"
-                id="textarea"
-                name="textarea"
-                rows="3"
-              ></textarea>
-
-            </div>
-            <div class="formulario__contenedorBoton">
-              <!-- button -->
-              <button class="formulario__button">ENVIAR</button>
-            </div>
-          </form>
+          <span> gracias por tu mensaje</span>
         </div>
-      </div>
     </div>
 
     <div class="footer">
@@ -309,6 +255,11 @@
     </div>
 
     <!-- scripts -->
+    <script>
+        setTimeout(function(){
+            window.location.replace("contacto.html");
+        },2000);
+    </script>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
